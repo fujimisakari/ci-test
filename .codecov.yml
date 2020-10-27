@@ -1,0 +1,11 @@
+ignore:
+  - "repository/yo/*"
+  - "tools/*"
+  - "tests/*"
+flags:
+  unit_test:
+    paths:
+      - /
+  e2e_test:
+    paths:
+      - /

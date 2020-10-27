@@ -2,7 +2,7 @@
 #
 # Check https://circleci.com/docs/2.0/language-go/ for more details
 version: 2
-  
+
 jobs:
   build:
     docker:
@@ -22,5 +22,4 @@ jobs:
           name: Run unit test and collect coverages
           command: |
             make test/coverage-unit
-      - run: make codecov
-
+            make codecov CODECOV_FLAG=unit_test
