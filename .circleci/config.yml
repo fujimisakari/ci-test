@@ -26,6 +26,5 @@ jobs:
           name: Run unit test and collect coverages
           command: |
             make test/coverage-unit
-      - codecov/upload:
-          file: coverage.txt
+      - run: make codecov
 
