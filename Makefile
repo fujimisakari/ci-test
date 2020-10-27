@@ -7,4 +7,4 @@ test/coverage-unit: ## run unit test and measure test coverage
 .PHONY: codecov
 codecov: SHELL=/usr/bin/env bash
 codecov: ## send coverage result
-	bash <(curl -s https://codecov.io/bash) -Z -F ${CODECOV_FLAG}
+	bash <(curl -s https://codecov.io/bash)
