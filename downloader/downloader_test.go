@@ -40,25 +40,3 @@ func TestDo(t *testing.T) {
 		t.Fatalf("got %v, want %v", got, want)
 	}
 }
-
-func TestFilePathFromObjKey(t *testing.T) {
-	cases := []struct {
-		objKey string
-		want   string
-	}{
-		{
-			"testdata/2018/12/01/1.txt",
-			"/tmp/testdata_2018_12_01_1.txt",
-		},
-		{
-			"testdata/2019/01/28/1.txt",
-			"/tmp/testdata_2019_01_28_1.txt",
-		},
-	}
-
-	for _, tc := range cases {
-		if got, want := FilePathFromObjKey(tc.objKey), tc.want; got != want {
-			t.Fatalf("got %v, want %v", got, want)
-		}
-	}
-}
