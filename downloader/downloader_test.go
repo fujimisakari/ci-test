@@ -58,6 +58,10 @@ func TestFilePathFromObjKey(t *testing.T) {
 			"testdata/2020/02/28/1.txt",
 			"/tmp/testdata_2020_02_28_1.txt",
 		},
+		{
+			"testdata/2020/03/28/1.txt",
+			"/tmp/testdata_2020_03_28_1.txt",
+		},
 	}
 
 	for _, tc := range cases {
