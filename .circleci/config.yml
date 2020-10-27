@@ -22,4 +22,4 @@ jobs:
           name: Run unit test and collect coverages
           command: |
             make test/coverage-unit
-            make codecov
+            make codecov CODECOV_FLAG=unit_test
