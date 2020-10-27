@@ -60,7 +60,7 @@ func TestFilePathFromObjKey(t *testing.T) {
 		},
 		{
 			"testdata/2020/03/28/1.txt",
-			"/tmp/testdata_2020_0_28_1.txt",
+			"/tmp/testdata_2020_03_28_1.txt",
 		},
 	}
 
