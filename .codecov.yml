@@ -1,7 +1,3 @@
-ignore:
-  - "repository/yo/*"
-  - "tools/*"
-  - "tests/*"
 flags:
   unit_test:
     paths:

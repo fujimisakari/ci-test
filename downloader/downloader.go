@@ -90,7 +90,3 @@ func (d *downloader) download(ctx context.Context, objKeys []string) []error {
 func FilePathFromObjKey(key string) string {
 	return fmt.Sprintf("/tmp/%s", strings.Replace(key, "/", "_", -1))
 }
-
-func FilePathFromObjKey2(key string) string {
-	return fmt.Sprintf("/tmp/%s", strings.Replace(key, "/", "_", -1))
-}
